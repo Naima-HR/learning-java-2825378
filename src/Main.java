@@ -1,26 +1,40 @@
 
+
+import java.util.Scanner;
+
+
 public class Main {
 
-    public static void main(String args[]) {
-        String question = "";
-        String choiceOne = "";
-        String choiceTwo = "";
-        String choiceThree = "";
-
-        String correctAnswer = choiceTwo;
-
-        // Write a print statement asking the question
-        // Write a print statement giving the answer choices
-
-        // Have the user input an answer
-        // Retrieve the user's input
-
-        // If the user's input matches the correctAnswer...
-        // then the user is correct and we want to print out a congrats message to the user.
-
-        // If the user's input does not match the correctAnswer...
-        // then the user is incorrect and we want to print out a message saying that the user is incorrect as well as what the correct choice was.
-
+    
+    public static void main(String[] args) {
+        
+        String Q = "What is the capital of Algeria?";
+        String RA1 = "algiers";
+        String A2 = "oran";
+        String A3 = "telemcan";
+        boolean badA= true;
+        while (badA)
+        {
+      
+           System.out.println(Q);
+           System.out.println(RA1);
+           System.out.println(A2);
+           System.out.println(A3);
+           Scanner sc = new Scanner(System.in);
+           String A = sc.next();
+           if (RA1.equals(A.toLowerCase()))
+           {
+               System.out.println("Congratulations +1");
+               badA= false;
+              
+           }  else
+           {
+               System.out.println("Opps!! you are wrong \nTry again ^^");
+           } 
+           
+       
+        }
+        
     }
-
+    
 }
